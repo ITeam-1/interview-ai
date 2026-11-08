@@ -1,18 +1,16 @@
-package com.example.demo;
+package com.iteam;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.hibernate.autoconfigure.HibernateJpaAutoConfiguration;
 import org.springframework.boot.jdbc.autoconfigure.DataSourceAutoConfiguration;
 
 @SpringBootApplication(exclude = {
-        DataSourceAutoConfiguration.class,
-        HibernateJpaAutoConfiguration.class
+        DataSourceAutoConfiguration.class
 })
-public class DemoApplication {
+public class ITeamApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(ITeamApplication.class, args);
 	}
 
 }
